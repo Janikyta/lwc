@@ -1,0 +1,36 @@
+<template>
+
+	<div>
+		<p>Empresa: x </p>
+		<p>CNPJ: x </p>
+		<p>Endereço: x </p>
+	</div> <br>
+
+	<div if:true={visible}>
+		<div>
+			<p>Produto: X </p>
+			<p>Descrição: X </p>
+			<p>Preço: R$ X </p>
+		</div>
+	</div><br>
+
+	<div if:true={visible}>
+		<div>
+			<p>Promoção </p>
+			<p>oferta1: X </p>
+			<p>oferta2: X </p>
+		</div>
+	</div><br>
+
+	<lightning-button variant="brand" label="Mostrar promoções" title="Primary action" onclick={mostrarPromocoes}
+		class="slds-m-left_x-small"></lightning-button> <br><br>
+
+
+
+	<div>
+		<img src={pokemon}>
+	</div> <br>
+	<lightning-button variant="brand" label="Mostrar pokemon" title="Primary action" onclick={mostrarPokemon}
+		class="slds-m-left_x-small"></lightning-button>
+
+</template>
